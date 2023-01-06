@@ -74,7 +74,7 @@ tmux_conf_theme_colour_16="#d70000"   # red
 tmux_conf_theme_colour_17="#e4e4e4"   # white
 
 tmux_conf_theme_status_left_message="🌼 夙夜在公"
-tmux_conf_theme_status_right_time="%Y-%m-%d %A 🐝"
+tmux_conf_theme_status_right_time="%Y-%m-%d %R %A 🐝"
 tmux_conf_theme_status_right_username="#{username}#{root} 🌴"
 tmux_conf_theme_status_right_hostname="#{hostname} 🐬"
 
@@ -241,7 +241,7 @@ tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see
 #     - #{username}
 #     - #{username_ssh}
 tmux_conf_theme_status_left=" 🍀 #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} | $tmux_conf_theme_status_left_message "
-tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , #{weather} , %R , $tmux_conf_theme_status_right_time | $tmux_conf_theme_status_right_username | $tmux_conf_theme_status_right_hostname "
+tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , #{weather} , $tmux_conf_theme_status_right_time | $tmux_conf_theme_status_right_username | $tmux_conf_theme_status_right_hostname "
 
 # status left style
 tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_7,$tmux_conf_theme_colour_8"
