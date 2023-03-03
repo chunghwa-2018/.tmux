@@ -420,6 +420,9 @@ set -g @resurrect-capture-pane-contents 'on'
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
 
+# 开启复制窗口内文本
+set-window-option -g mode-keys vi
+
 
 # -- custom variables ----------------------------------------------------------
 
